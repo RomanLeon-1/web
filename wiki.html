@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Язык программирования Си</title>
+</head>
+<body>
+    <h1>Си</h1>
+    <img src="https://avatars.mds.yandex.net/i?id=634c3c81b98f7b19c35a72f9a5ae781019fb81b2-10119783-images-thumbs&n=13" alt="Си">
+    <p><strong>Си</strong> (от <a href ="https://ru.wikipedia.org/wiki/Латинский_язык">лат</a>. буквы C англ. языка[⇨]) — <a href="https://ru.wikipedia.org/wiki/Компилятор">компилируемый</a> <a href="https://ru.wikipedia.org/wiki/Статическая_типизация">статически типизированный</a> <a href="https://ru.wikipedia.org/wiki/Язык_программирования">язык программирования</a>общего назначения, разработанный в 1969—1973 годах сотрудником <a href="https://ru.wikipedia.org/wiki/Bell_Labs">Bell Labs</a> <a href="https://ru.wikipedia.org/wiki/Ритчи,_Деннис">Деннисом Ритчи</a> как развитие языка <a href="https://ru.wikipedia.org/wiki/Би_(язык_программирования)">Би.</a></p>
+    <p>Первоначально был разработан для реализации <a href="https://ru.wikipedia.org/wiki/Операционная_система">операционной системы</a> <a href="https://ru.wikipedia.org/wiki/UNIX">UNIX</a>, но впоследствии был перенесён на множество других платформ.</p>
+    <p>Согласно дизайну языка, его конструкции близко сопоставляются типичным машинным инструкциям, благодаря чему он нашёл применение в проектах, для которых был свойственен язык ассемблера, в том числе как в операционных системах, так и в различном прикладном программном обеспечении для множества устройств — от суперкомпьютеров до встраиваемых систем.</p>
+    <p>Язык программирования Си оказал существенное влияние на развитие индустрии программного обеспечения, а его <a href="https://ru.wikipedia.org/wiki/Синтаксис_(программирование)">синтаксис</a> стал основой для таких языков программирования, как <a href="https://ru.wikipedia.org/wiki/C%2B%2B">C++</a>, <a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a>, <a href="https://ru.wikipedia.org/wiki/Java">Java</a> и <a href="https://ru.wikipedia.org/wiki/Objective-C">Objective-C</a>.</p>
+
+    
+    <h2>Вещественные типы данных</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Тип данных</th>
+                <th>Размер</th>
+                <th>Стандарт</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>float</td>
+                <td>32 бита</td>
+                <td>IEC 60559 (IEEE 754), расширение F стандарта Си, число одинарной точности</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>64 бита</td>
+                <td>IEC 60559 (IEEE 754), расширение F стандарта Си, число двойной точности</td>
+            </tr>
+            <tr>
+                <td>long double</td>
+                <td>минимум 64 бита</td>
+                <td>зависит от реализации</td>
+            </tr>
+            <tr>
+                <td>float_t (C99)</td>
+                <td>минимум 32 бита</td>
+                <td>зависит от базового типа</td>
+            </tr>
+            <tr>
+                <td>double_t (C99)</td>
+                <td>минимум 64 бита</td>
+                <td>зависит от базового типа</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Соответствие дополнительных типов базовым</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>FLT_EVAL_METHOD</th>
+                <th>float_t</th>
+                <th>double_t</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>float</td>
+                <td>double</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>double</td>
+                <td>double</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>long double</td>
+                <td>long double</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
